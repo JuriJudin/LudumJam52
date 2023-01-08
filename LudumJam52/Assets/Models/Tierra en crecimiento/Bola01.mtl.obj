@@ -1,7 +1,7 @@
 # Blender 3.3.0
 # www.blender.org
-mtllib Sphere01.mtl
-o Icosphere
+mtllib Bola01.mtl.mtl
+o Icosphere.002
 v -0.235241 -0.700735 -0.724007
 v 0.003618 0.523793 0.892291
 v -0.847501 0.523790 0.279175
@@ -103,7 +103,7 @@ vt 0.818182 0.393651
 vt 0.681818 0.393651
 vt 0.045455 0.393651
 s 0
-usemtl Material.001
+usemtl Material.006
 f 8/12/1 13/23/1 1/1/1
 f 8/13/2 1/2/2 11/19/2
 f 1/1/3 13/23/3 18/30/3
