@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
 --- !u!1001 &74991832
@@ -243,8 +247,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+--- !u!1 &126544664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+  m_PrefabInstance: {fileID: 803840051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &126544666
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126544664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.6492863, y: 3, z: 4.436121}
+  m_Center: {x: -4.5804186, y: 0, z: 0.068537235}
 --- !u!1 &142109828
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +302,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &189693212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+  m_PrefabInstance: {fileID: 22813328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &189693213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189693212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9877548, y: 3, z: 4.435557}
+  m_Center: {x: -4.5094156, y: 0, z: 0.5394733}
 --- !u!1 &287428272
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +432,7 @@ GameObject:
   - component: {fileID: 301546444}
   - component: {fileID: 301546443}
   - component: {fileID: 301546442}
+  - component: {fileID: 301546446}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Untagged
@@ -430,6 +475,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -8274133419916619345, guid: cb2b07b12c7c8cb499d717a48af0ccef, type: 3}
+  - {fileID: -8274133419916619345, guid: cb2b07b12c7c8cb499d717a48af0ccef, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -467,12 +513,158 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301546441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.84, y: -0.45, z: 0.78}
+  m_LocalPosition: {x: -1.84, y: -0.65, z: 0.78}
   m_LocalScale: {x: 0.34868, y: 0.42365646, z: 0.45875}
   m_Children: []
   m_Father: {fileID: 142109829}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &301546446
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301546441}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f1f1615b829741c1981996d2e4cf52f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &310053419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 310053420}
+  - component: {fileID: 310053421}
+  m_Layer: 0
+  m_Name: awasound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &310053420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310053419}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2121939845}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &310053421
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310053419}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8fbd556f536694be18afefa9d29da266, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &460477427
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +744,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460477427}
   m_CullTransparentMesh: 1
+--- !u!1 &592523037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
+  m_PrefabInstance: {fileID: 2132347614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &592523038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592523037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.903109, y: 1.7893627, z: 11.047778}
+  m_Center: {x: -0.6457902, y: 0.39468122, z: -0.01788155}
+--- !u!1 &604212092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+  m_PrefabInstance: {fileID: 2020597808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &604212094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604212092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2163298, y: 3, z: 5.603656}
+  m_Center: {x: -0.60816514, y: 0, z: 0.19816898}
 --- !u!1001 &704692543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -610,6 +838,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
       propertyPath: m_Name
       value: Tierra fertil2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
@@ -748,6 +980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
 --- !u!1001 &803840051
@@ -808,6 +1044,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
       propertyPath: m_Name
       value: Tierra fertil2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
@@ -870,6 +1110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26250f119d3db24fa6760c945b47232, type: 3}
 --- !u!1 &888123366
@@ -886,6 +1130,7 @@ GameObject:
   - component: {fileID: 888123368}
   - component: {fileID: 888123367}
   - component: {fileID: 888123372}
+  - component: {fileID: 888123373}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -943,6 +1188,8 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -2813467912831258332, guid: 83da5f072386d8e49b3779c798a513aa, type: 3}
+  - {fileID: -2813467912831258332, guid: 83da5f072386d8e49b3779c798a513aa, type: 3}
+  - {fileID: -2813467912831258332, guid: 83da5f072386d8e49b3779c798a513aa, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -979,12 +1226,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888123366}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 918551266}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &888123372
 MonoBehaviour:
@@ -998,11 +1245,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 138dc853eb62149549ee459232ffe181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  maxSpeed: 5.5
+  speed: 1
+  maxSpeed: 5
+  distanceFromCamera: 15
   cameraTransform: {fileID: 2121939845}
   plantTransform: {fileID: 142109829}
-  distanceFromCamera: 15
+  texto: {fileID: 460477429}
+  animplant: {fileID: 301546446}
+  rbparent: {fileID: 918551265}
+  tierrasound: {fileID: 1582023810}
+  awasound: {fileID: 310053421}
+--- !u!95 &888123373
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888123366}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e39a5254d23fa4709b5192226bcc21b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &918551264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918551266}
+  - component: {fileID: 918551265}
+  - component: {fileID: 918551267}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &918551265
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918551264}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &918551266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918551264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.29, y: 2.59, z: 2.86}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 888123371}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &918551267
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918551264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &926764298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1062,8 +1395,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+--- !u!1 &945013292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+  m_PrefabInstance: {fileID: 1674143590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &945013294
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945013292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2880745, y: 3, z: 3.9674435}
+  m_Center: {x: 1.6440372, y: 0, z: -3.5287428}
 --- !u!1001 &974856351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1140,6 +1495,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: e12a35c348dd9bc459dfe5a5858dc727, type: 3}
+--- !u!1 &1024781760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
+  m_PrefabInstance: {fileID: 1288156168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1024781761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024781760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.68304, y: 2.18186, z: 9.438701}
+  m_Center: {x: -0.8610928, y: 0.590929, z: 0.17878778}
 --- !u!1001 &1079225487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1216,6 +1589,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: f968e8987279ae043bfc3e5a67576bab, type: 3}
+--- !u!1 &1129865515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+  m_PrefabInstance: {fileID: 2082023598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1129865519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129865515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 0, z: 2}
 --- !u!1001 &1267004733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1275,8 +1666,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+--- !u!1 &1267032772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+  m_PrefabInstance: {fileID: 926764298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1267032774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267032772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.544956, y: 3, z: 5.3966913}
+  m_Center: {x: -4.3210735, y: 0, z: 0.30165434}
 --- !u!1001 &1288156168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1344,8 +1757,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
+      propertyPath: m_TagString
+      value: awa
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
+--- !u!1 &1373610985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+  m_PrefabInstance: {fileID: 1458989375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1373610987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373610985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.9818068, y: 3, z: 5.2166786}
+  m_Center: {x: 1.4909073, y: 0, z: -3.8414936}
 --- !u!1001 &1458989375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1405,8 +1840,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+--- !u!1 &1525126787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+  m_PrefabInstance: {fileID: 756501962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1525126789
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525126787}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2360697, y: 3, z: 5.82414}
+  m_Center: {x: -4.6052794, y: 0, z: 0.08791715}
 --- !u!1001 &1552292208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1483,6 +1940,205 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: a2ccdf7eaef11074f8f29b95add543ff, type: 3}
+--- !u!1 &1552641553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
+  m_PrefabInstance: {fileID: 2003345520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1552641554
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552641553}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.196509, y: 2.0543325, z: 11.240186}
+  m_Center: {x: -0.39714062, y: 0.5271625, z: 0.07238316}
+--- !u!1 &1578439141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+  m_PrefabInstance: {fileID: 1267004733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1578439143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578439141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.662918, y: 3, z: 5.5377426}
+  m_Center: {x: -4.5915174, y: 0, z: 0.23110609}
+--- !u!1 &1582023808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582023809}
+  - component: {fileID: 1582023810}
+  m_Layer: 0
+  m_Name: tierrasound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582023809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582023808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2121939845}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1582023810
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582023808}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4530dbb8fec5f4e338b2333cf83cffb7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1617244730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+  m_PrefabInstance: {fileID: 2082023598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1617244731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617244730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 1, y: 0, z: -3}
+--- !u!1 &1630369006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 84816be71e207b649bfbc77392bf9e6d, type: 3}
+  m_PrefabInstance: {fileID: 704692543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1630369008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630369006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.0800323, y: 3, z: 5.318989}
+  m_Center: {x: -4.5903473, y: 0, z: 0.3405056}
 --- !u!1001 &1668622755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1541,6 +2197,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
       propertyPath: m_Name
       value: Tierra fertil
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26250f119d3db24fa6760c945b47232, type: 3}
@@ -1602,6 +2262,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
       propertyPath: m_Name
       value: Tierra fertil1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
@@ -1757,8 +2421,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+--- !u!1 &1723757705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+  m_PrefabInstance: {fileID: 1721378591}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1723757707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723757705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 0, z: 2}
+--- !u!1 &1817055137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+  m_PrefabInstance: {fileID: 74991832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1817055139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817055137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3891258, y: 3, z: 2.00136}
+  m_Center: {x: 2.009303, y: 0, z: -2.4600258}
+--- !u!1 &1904963000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+  m_PrefabInstance: {fileID: 1668622755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1904963001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904963000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 4.096324}
+  m_Center: {x: 0, y: 0, z: 1.6857886}
 --- !u!1001 &2003345520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1826,6 +2548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
+      propertyPath: m_TagString
+      value: awa
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
 --- !u!1001 &2020597808
@@ -1887,8 +2613,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+--- !u!1 &2036210138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d26250f119d3db24fa6760c945b47232, type: 3}
+  m_PrefabInstance: {fileID: 810406320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2036210140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036210138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.694994, y: 3, z: 4.4903164}
+  m_Center: {x: -0.34749764, y: 0, z: 0.75483626}
 --- !u!1001 &2082023598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1948,6 +2696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tierra fertil1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
+      propertyPath: m_TagString
+      value: tierrafertil
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 875e30adf360460408c36b4890a7c20f, type: 3}
 --- !u!1 &2121939842
@@ -1961,6 +2713,7 @@ GameObject:
   - component: {fileID: 2121939845}
   - component: {fileID: 2121939844}
   - component: {fileID: 2121939843}
+  - component: {fileID: 2121939846}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -2029,10 +2782,108 @@ Transform:
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 528.14, y: 305.27, z: 22.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1582023809}
+  - {fileID: 310053420}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!82 &2121939846
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121939842}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 76cc23a59820e4583b9977bc81266aba, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2132347614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2099,6 +2950,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
       propertyPath: m_Name
       value: Water (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
+      propertyPath: m_TagString
+      value: awa
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ca43e5b33e18e14886333953b3890bf, type: 3}
